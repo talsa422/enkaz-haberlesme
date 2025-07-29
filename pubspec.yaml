@@ -1,0 +1,52 @@
+name: enkaz_haberlesme
+description: Enkaz altı Bluetooth mesh haberleşme uygulaması
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  
+  # Bluetooth için
+  flutter_blue_plus: ^1.31.15
+  permission_handler: ^11.3.1
+  
+  # UI için
+  cupertino_icons: ^1.0.2
+  google_fonts: ^6.1.0
+  
+  # Ses kaydı için
+  record: ^5.0.4
+  audioplayers: ^5.2.1
+  
+  # Veri saklama için
+  shared_preferences: ^2.2.2
+  
+  # Durum yönetimi
+  provider: ^6.1.1
+  
+  # Yardımcı paketler
+  intl: ^0.19.0
+  uuid: ^4.3.3
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+
+flutter:
+  uses-material-design: true
+  
+  assets:
+    - assets/sounds/
+    - assets/images/
+  
+  fonts:
+    - family: Roboto
+      fonts:
+        - asset: assets/fonts/Roboto-Regular.ttf
+        - asset: assets/fonts/Roboto-Bold.ttf
+          weight: 700 
